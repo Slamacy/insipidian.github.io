@@ -1,8 +1,50 @@
 <!Doctype HTML>
 <head>
-
+    <title>| Art Showcase</title>
+    <meta charset="UTF-8">
+    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <meta name = "description" content= "slamacy website"> 
+    <meta name = "keywords" content = "">
+    <meta name = "author" content = "slamacy"> <!-- i made this -->
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"> <!-- for make phone nice -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/"> <!-- ICONNNN UGHHHNNG D: -->
+    <script type="text/javascript" src="js/art_interaction.js"></script>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="header_img">
+            
+        </div>
 
+        <div class="navbar">
+            <ul>
+                <li><a href = "index.html">Illustrations</a></li>
+                <li><a href = "3D_modelling.html">3D</a></li>
+                <li><a href = "games.html">Games</a></li>
+                <li><a href = "about_me.html">About Me</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown-content">
+                    <a href="#">Concepts</a>
+                    <a href="#">Comics</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="artbox">
+            <div class="art" onclick="OnClickArt(0)"></div>
+            <div class="art" onclick="OnClickArt(1)"></div>
+            <div class="art" onclick="OnClickArt(2)"></div>
+            <div class="art" onclick="OnClickArt(3)"></div>
+            <div class="art" onclick="OnClickArt(4)"></div>
+            <div class="art" onclick="OnClickArt(5)"></div>
+        </div>
+        <div id="image_preview">
+            <img src="media/icons/x-temp.png" id="exit_btn" alt="exit button" onclick="CloseArt()">
+            <img src="media/icons/x-temp.png" id="next_btn" alt="next image button" onclick="NextArt(currentArt + 1)">
+            <img src="media/icons/x-temp.png" id="prev_btn" alt="previous image button" onclick="NextArt(currentArt - 1)">
+        </div>
+    </div>
 
 </body>
