@@ -22,6 +22,7 @@ function NextArt(artID) {
     else if(artID < 0) {
         artID = totalArt;
     }
+    currentArt = artID;
     ShowFullArt(artID);
 }
 
@@ -43,7 +44,6 @@ function ShowFullArt(artID) {
         else {
             newImg.width = 800;
         }
-        currentArt = artID;
         
         document.getElementById("image_preview").appendChild(newImg);
         newImg.style.position = "relative";
