@@ -16,7 +16,7 @@ function NextArt(artID) {
     // add fadeout then delete
     document.getElementById("image_fullview").remove();
 
-    if(currentArt > totalArt) {
+    if(artID > totalArt) {
         artID = 0;
     }
     else if(artID < 0) {

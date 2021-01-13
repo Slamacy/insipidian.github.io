@@ -48,8 +48,8 @@ ul {
     text-align: center;
   }
   
-  .dropdown-content a:hover {
-    background-color: #ffffff;
+  li a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
+    background-color: #ac3838;
   }
   
   .dropdown:hover .dropdown-content {
