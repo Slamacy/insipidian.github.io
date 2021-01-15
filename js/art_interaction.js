@@ -1,20 +1,33 @@
-var images = [];
+var imageNames = [
+    "\"Nega Eggman\" - A gift for Laura [2020]",
+    "\"Close Friends\" - Album Art Commission for Connected Sounds [2020]",
+    "\"Into The Unknown\" - Album Art Commission for Connected Sounds [2020]",
+    "\"The Dark Gods of Chaos\" - Commission [2020]",
+    "\"Star Spread\" - Album Art Commission for AdamJLE [2019]",
+    "\"Sky Rocket\" - Album Art Commission for AdamJLE [2019]",
+    "\"Sitting on Speaker\" [2019]",
+    "\"Cleo\" - A gift for a friend [2019]",
+];
 var currentArt = 0;
-var totalArt = 4;
+var totalArt = 7;
 
 function OnClickArt(artID) {
     document.getElementById("image_preview").style.visibility = "visible";
+    currentArt = artID;
     ShowFullArt(artID);
 }
 
 function CloseArt() {
     document.getElementById("image_fullview").remove();
+    document.getElementById("art_title").remove();
     document.getElementById("image_preview").style.visibility = "hidden";
+    currentArt = 0;
 }
 
 function NextArt(artID) {
     // add fadeout then delete
     document.getElementById("image_fullview").remove();
+    document.getElementById("art_title").remove();
 
     if(artID > totalArt) {
         artID = 0;
@@ -29,7 +42,7 @@ function NextArt(artID) {
 function ShowFullArt(artID) {
     // add art fade in
     var newImg = new Image();
-    newImg.name = "artpiece" + artID;
+    newImg.id = "artpiece" + artID;
     newImg.src = "media/art/artpiece" + artID + ".png";
     //newImg.src = "media/icons/x-temp.png";
     var tempWidth;
@@ -45,11 +58,31 @@ function ShowFullArt(artID) {
             newImg.width = 800;
         }
         
-        document.getElementById("image_preview").appendChild(newImg);
-        newImg.style.position = "relative";
+        var artDiv = document.getElementById("image_and_title");
+
+        var imageText = document.createElement("H2");
+        imageText.id = "art_title"
+        var text = document.createTextNode(imageNames[artID]);
+        imageText.appendChild(text);
+
+        // Append img and title to new div
+        artDiv.appendChild(newImg);
+        artDiv.appendChild(imageText);
+
+        newImg.style.position = "fixed";
         newImg.style.top  = "calc(50% - " + newImg.height / 2 + "px)";
         newImg.style.left = "calc(50% - " + newImg.width / 2 + "px)";
+        newImg.style["-webkit-animation"] = "fadein 1s"; /* Safari, Chrome and Opera > 12.1 */
+        newImg.style["-moz-animation"] = "fadein 1s"; /* Firefox < 16 */
+        newImg.style["-ms-animation"] = "fadein 1s"; /* Internet Explorer */
+        newImg.style["-o-animation"] = "fadein 1s"; /* Opera < 12.1 */
+        newImg.style["animation"] = "fadein 1s"; 
+        newImg.style["pointer-events"] = "none";
+
+        imageText.style["-webkit-animation"] = "fadein 1s"; /* Safari, Chrome and Opera > 12.1 */
+        imageText.style["-moz-animation"] = "fadein 1s"; /* Firefox < 16 */
+        imageText.style["-ms-animation"] = "fadein 1s"; /* Internet Explorer */
+        imageText.style["-o-animation"] = "fadein 1s"; /* Opera < 12.1 */
+        imageText.style["animation"] = "fadein 1s"; 
     }
-    
-    
 }

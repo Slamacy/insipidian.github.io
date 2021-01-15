@@ -7,9 +7,9 @@
     <meta name = "keywords" content = "">
     <meta name = "author" content = "slamacy">  
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/profile_pic.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/profile_pic.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/favicon/profile_pic.png"> 
     <script type="text/javascript" src="js/art_interaction.js"></script>
 </head>
 <body>
@@ -17,19 +17,18 @@
         <div class="header_img">
             
         </div>
-
         <div class="navbar">
             <ul>
                 <li><a href = "index.html">Illustrations</a></li>
                 <li><a href = "3D_modelling.html">3D</a></li>
                 <li><a href = "games.html">Games</a></li>
                 <li class="dropdown"><a href="about_me.html" class="dropbtn">About Me</a>
-                    <div class="dropdown-content">
+                    <div class="dropdown_content_aboutme">
                     <a href = "resume.html">Resumé</a>
                     </div>
                 </li>
                 <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">More</a>
-                    <div class="dropdown-content">
+                    <div class="dropdown_content_more">
                     <a href="concepts.html">Concepts</a>
                     <a href="comics.html">Comics</a>
                     </div>
@@ -37,17 +36,28 @@
             </ul>
         </div>
         <div id="artbox">
-            <div class="art" onclick="OnClickArt(0)"></div>
-            <div class="art" onclick="OnClickArt(1)"></div>
-            <div class="art" onclick="OnClickArt(2)"></div>
-            <div class="art" onclick="OnClickArt(3)"></div>
-            <div class="art" onclick="OnClickArt(4)"></div>
-            <div class="art" onclick="OnClickArt(5)"></div>
+            <div class="art" onclick="OnClickArt(0)"><img src="media/art_crops/crop_egg.png"></div>
+            <div class="art" onclick="OnClickArt(1)"><img src="media/art_crops/crop_rooftop.png"></div>
+            <div class="art" onclick="OnClickArt(2)"><img src="media/art_crops/crop_unknown.png"></div>
+            <div class="art" onclick="OnClickArt(3)"><img src="media/art_crops/crop_robin.png"></div>
+            <div class="art" onclick="OnClickArt(4)"><img src="media/art_crops/crop_starspread.png"></div>
+            <div class="art" onclick="OnClickArt(5)"><img src="media/art_crops/crop_skyrocket.png"></div>
+            <div class="art" onclick="OnClickArt(6)"><img src="media/art_crops/crop_ban.png"></div>
+            <div class="art" onclick="OnClickArt(7)"><img src="media/art_crops/crop_cleo.png"></div>
         </div>
         <div id="image_preview">
+            <div id="bgfill">
             <img src="media/icons/x-temp.png" id="exit_btn" alt="exit button" onclick="CloseArt()">
             <img src="media/icons/x-temp.png" id="next_btn" alt="next image button" onclick="NextArt(currentArt + 1)">
             <img src="media/icons/x-temp.png" id="prev_btn" alt="previous image button" onclick="NextArt(currentArt - 1)">
+            </div>
+            <div id=image_and_title></div>
+        </div>
+        <div id="footer">
+            <a href="" id="social_icon"><img src="media/icons/twitter_logo_small.png"></a>/
+            <a href="" id="social_icon"><img src="media/icons/insta_logo_small.png"></a>/
+            <a href="" id="social_icon"><img src="media/icons/twitch_logo_small.png"></a><br>
+            <p>&copy; 2021 Oisin Murphy.</p>
         </div>
     </div>
 
