@@ -1,0 +1,180 @@
+    body {
+        background-color: #06040e;
+        /* background-image: url("../media/space_gif_bg_1.gif");
+        background-repeat: repeat; */
+    }
+    
+    #games {
+        position: relative;
+        z-index: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #game_display_1, #game_display_3{
+        position: relative;
+        width: 100%;
+        height: 800px;
+        background-color: #181818;
+    }
+    
+    #game_display_2 {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        margin-top: 100px;
+        background-color: #f77c17;
+    }
+    
+    #video_viewer {
+        visibility: hidden;
+    }
+    
+    #video_viewer iframe {
+        position: fixed;
+        width: 1280px;
+        height: 720px;
+        top: calc((100% - 720px) / 2);
+        left: calc((100% - 1280px) / 2);
+    }
+
+    #gav_1, #gav_2, #gav_3  {
+        height: 100%;
+        width: 50%;
+    }
+    
+
+    #gav_2 {
+        position: absolute;
+        right: 0;
+    }
+    
+    /* w = 961, h = 623  */
+    #gav_1 img, #gav_3 img {
+        position: absolute;
+        top: calc((100% - 623px) / 2);
+        left: calc((50% - 961px) / 2.25);
+        cursor: pointer;
+    }
+
+    #gav_2 img {
+        position: absolute;
+        top: calc((100% - 623px) / 2);
+        right: 15%;
+        cursor: pointer;
+    }
+
+    
+
+    /* w = 961, h = 623 
+    #gav_2 img {
+        position: absolute;
+        top: calc((100% - 623px) / 2);
+        left: calc((50% - 961px) / 2.25);
+        cursor: pointer;
+    } */
+    
+    #technologies {
+        position: absolute;
+        top: 0;
+        width: 20%;
+        height: 95%;
+        border: 2px rgb(53, 53, 53) solid;
+        background-color: #7c7c7c;
+    }
+
+    #game_display_1 #technologies, #game_display_3 #technologies {
+        right: 0;
+    }
+
+    #game_display_2 #technologies {
+        left: 0;
+    }
+
+    #technologies img {
+        position: relative;
+        left: 5%;
+        width: 90%;
+        padding-top: 20%;
+    }
+
+    #game_display_1 #technologies img {
+        width: 50%;
+        left: 25%;
+        padding-top: 10%;
+        padding-bottom: 10%
+    }
+    
+    #game_display_1 #game_text,  #game_display_3 #game_text {
+        position: absolute;
+        top: calc((100% - 700px) / 2);
+        right: 2%;
+        width: 50%;
+        height: 90%;
+        color: #fff;
+        border-left: 2px rgb(71, 71, 71) solid;
+    }
+    
+    #game_display_2 #game_text {
+        position: absolute;
+        top: calc((100% - 700px) / 2);
+        left: 2%;
+        width: 50%;
+        height: 90%;
+        border-left: 0px;
+        border-right: 2px rgb(71, 71, 71) solid;
+        color: #06040e;
+    }
+
+    #game_text p {
+        margin-left: 5%;
+        width: 70%;
+    }
+
+    #game_display_2 #game_text p {
+        margin-left: 25%;
+        width: 70%;
+    }
+    
+    #game_display_1 #game_text h1, #game_display_3 #game_text h1 {
+        margin-left: 25%;
+        font-size: 42px;
+    }
+
+    #game_display_2 #game_text h1 {
+        margin-left: 50%;
+        font-size: 42px;
+    }
+
+    #game_text h2 {
+        margin-left: 5%;
+    }
+
+    #game_display_2 #game_text h2 {
+        margin-left: 25%;
+    }
+    
+    #game_text a {
+        margin-left: 5%;
+        line-height: 1.5em;
+    }
+    
+    #game_text h3 {
+        margin-left: 20%;
+    }
+    /* unvisited & visited link */
+    
+    #game_text a:link,
+    #game_text a:visited {
+        color: rgb(255, 203, 107);
+    }
+    /* mouse over link */
+    
+    #game_text a:hover {
+        color: #f77c17;
+    }
+    /* selected link */
+    
+    #game_text a:active {
+        color: #f77c17;
+    }
