@@ -81,13 +81,23 @@ function ShowFullSection() {
         //alert(this.width + 'x' + this.height);
         tempWidth = this.width;
 
-        newImg.id = "image_fullview"
-        if(newImg.height > newImg.width) {
-            newImg.height = 1000;
-        }
-        else {
-            newImg.width = 1200;
-        }
+        newImg.id = "image_fullview";
+        
+        //if(newImg.height > newImg.width) {
+            var height = 0;
+            var body = window.document.body;
+            if (window.innerHeight) {
+                height = window.innerHeight;
+            } else if (body.parentElement.clientHeight) {
+                height = body.parentElement.clientHeight;
+            } else if (body && body.clientHeight) {
+                height = body.clientHeight;
+            }
+            newImg.height = height * 0.8;
+        //}
+        // else {
+        //     newImg.width = 800;
+        // }
         
         var artDiv = document.getElementById("image_and_title");
 

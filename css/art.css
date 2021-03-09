@@ -33,12 +33,13 @@
 }
 
 #art_title {
-    position: fixed;
-    left: calc(50% - 250px);
-    top: 82%;
-    width: 500px;
+    position: absolute;
+    margin: auto;
+    width: 700px;
     text-align: center;
-    /* top: px; */
+    left: calc(50% - (700px / 2));
+    bottom: 3%;
+    font-size: 22px;
 }
 
 .image_and_title {
@@ -46,6 +47,7 @@
     width: 80%;
     height: 80%;
     margin: auto auto;
+    display: inline-block;
 }
 
 #art_title {
