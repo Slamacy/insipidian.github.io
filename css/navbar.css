@@ -74,8 +74,9 @@ li a:hover,
 
 .header_img {
     position: relative;
-    background-color: rgb(112, 112, 112);
-    width: 900px;
-    height: 230px;
+    width: 780px;
+    height: 240px;
     margin: auto;
+    margin-top: 10px;
+    text-align: center;
 }
