@@ -12,6 +12,8 @@
     #game_display_1 {
         top: 20px;
     }
+
+    
     
     #game_display_1, #game_display_3{
         position: relative;
@@ -36,10 +38,10 @@
     
     #video_viewer iframe {
         position: fixed;
-        width: 1280px;
-        height: 720px;
-        top: calc((100% - 720px) / 2);
-        left: calc((100% - 1280px) / 2);
+        width: 60%;
+        height: 70%;
+        top: calc((100% - 70%) / 2);
+        left: calc((100% - 60%) / 2);
     }
 
     #gav_1, #gav_3  {
@@ -157,6 +159,7 @@
         margin-left: 5%;
         width: 93%;
         font-family: 'Titillium Web', sans-serif;
+        font-size: 1.5vh;
     }
         
     #text h1 {
