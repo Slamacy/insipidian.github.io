@@ -26,8 +26,7 @@
 }
 
 #artbox {
-    position: absolute;
-    top: 300px;
+    position: relative;
     margin-left: calc(50% - 2 * 250px);
     width: calc(4 * 250px);
     height: calc(2 * 440px);

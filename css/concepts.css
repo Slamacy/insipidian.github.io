@@ -1,0 +1,60 @@
+#concept_wrapper {
+    position: relative;
+    margin: auto;
+    width: 60%;
+    min-height: 500px;
+}
+
+.concept {
+    position: relative;
+    width: 25%;
+    top: 40px;
+    height: 400px;
+    background-color: #ffecdc;
+    outline: 2px solid #f77c17;
+    box-shadow: 0 0 15px #f77c17;
+    display: inline-block;
+    cursor: pointer;    
+    vertical-align: top;
+    text-align: center;
+}
+
+.concept img {
+    position: relative;
+    width: 80%;
+    top: 5%;
+}
+
+#concept_1 {
+    margin-left: 2.5%;
+    margin-right: 10%;
+}
+
+#concept_2 {
+    margin-right: 9.5%;
+}
+
+h1 {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    position: relative;
+    top: 10%;
+    width: 80%;
+    margin: auto;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#image_preview {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    z-index: 2;
+}

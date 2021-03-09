@@ -1,0 +1,81 @@
+#model_showcase {
+    position: relative;
+    top: 40px;
+    padding-bottom: 120px;
+}
+
+.model {
+    position: relative;
+    width: 1000px;
+    min-height: 550px;
+    border: 4px solid #f77c17;
+    box-shadow: 0 0 15px #f77c17;
+    left: calc(50% - (1004px / 2));
+}
+
+#model_item_2,
+#model_item_3 {
+    margin-top: 80px;
+}
+
+.sketchfab-embed-wrapper {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.model_text {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    border: 4px solid #fcba83;
+    box-shadow: 0 0 5px #fcba83;
+    width: 270px;
+    min-height: 400px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.model_text h1 {
+    /* used for 3D Model titles */
+    text-align: center;
+    font-size: 18px;
+}
+
+.model_text h2 {
+    /* used for 3D Model titles */
+    text-align: center;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.model_text p {
+    margin-left: 10px;
+}
+
+.model_text img {
+    margin-left: calc(50% - 50px);
+}
+
+#model_decorator {
+    position: absolute;
+    width: 30%;
+    bottom: 0;
+    pointer-events: none;
+}
+
+h2 {
+    text-align: center;
+    color: #525252;
+    margin-top: 90px;
+}
+
+.work {
+    text-align: center;
+    width: 60%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.work img {
+    height: 400px;
+}

@@ -65,12 +65,11 @@ li a:hover,
 }
 
 .navbar {
-    position: absolute;
+    position: relative;
     width: 800px;
-    left: 50%;
-    top: 245px;
-    margin-left: -400px;
-    z-index: 1;
+    margin: auto;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 20px;
 }
 
 .header_img {
@@ -78,6 +77,5 @@ li a:hover,
     background-color: rgb(112, 112, 112);
     width: 900px;
     height: 230px;
-    left: 50%;
-    margin-left: -450px;
+    margin: auto;
 }

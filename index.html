@@ -1,54 +1,68 @@
 <!Doctype HTML>
 <head>
+    <title>| Art - Insipidian.com</title>
     <meta charset="UTF-8">
     <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <link href="css/navbar.css" rel="stylesheet" type="text/css"/>
+    <link href="css/art.css" rel="stylesheet" type="text/css"/>
     <meta name = "description" content= "slamacy website"> 
+    <meta name = "keywords" content = "">
+    <meta name = "author" content = "slamacy">  
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/profile_pic.png">
     <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/profile_pic.png">
     <link rel="icon" type="image/png" sizes="96x96" href="media/favicon/profile_pic.png"> 
+    <script type="text/javascript" src="js/art_interaction.js"></script>
 </head>
 <body>
-    <div>
-        <h1>&nbsp&nbspFinal Year Portfolio links</h1>
-        &nbsp&nbsp<a href="https://mahara.dkit.ie/view/view.php?t=nHjDR0lOMoFIbE47UQSC" target="_blank">&nbsp- Portfolio Homepage</a><br/>
-        &nbsp&nbsp<a href="https://mahara.dkit.ie/view/view.php?t=JrNDtwnMCB0bTli8GSKp" target="_blank">&nbsp- Creating Art for our Game Project</a><br/>
-        &nbsp&nbsp<a href="https://mahara.dkit.ie/view/view.php?t=NURb93AWEvHeD2pdzG5I" target="_blank">&nbsp- Creating Character Animations with Root Motion in mind</a><br/>
-        &nbsp&nbsp<a href="https://mahara.dkit.ie/view/view.php?t=sL1iXI74tvg0y29JRFZw" target="_blank">&nbsp- Creating VR Interactions in Unity with SteamVR</a><br/>
-        &nbsp&nbsp<a href="https://mahara.dkit.ie/view/view.php?t=bsC4VT5ckAM9KgpHGxI1" target="_blank">&nbsp- Should We Use VR? - Trials & Experimentation</a><br/>
-        &nbsp&nbsp<a href="https://mahara.dkit.ie/view/view.php?t=KP4QUh1k8usIzDJlfRNO" target="_blank">&nbsp- Texturing our Robot in Substance Painter</a><br/>
-        <br/>
-        <h3>&nbsp&nbsp<a href="https://goldjay.itch.io/the-thinking-city">Final Year Game - The Thinking City</a></h3>
-        &nbsp&nbsp<a href="https://mahara.dkit.ie/view/view.php?t=RAciWeYzqbOpC2Kwl4G6">Team Mahara - The Thinking City</a>
-        <p>------------------------------------------------------------------------------</p>
+    <div class="wrapper">
+        <div class="header_img">
+            
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href = "index-new.html">Illustrations</a></li>
+                <li><a href = "3D_modelling.html">3D</a></li>
+                <li><a href = "games.html">Games</a></li>
+                <li class="dropdown"><a href="about_me.html" class="dropbtn">About Me</a>
+                    <!-- <div class="dropdown_content_aboutme">
+                    <a href = "resume.html">Resumé</a>
+                    </div> -->
+                </li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">More</a>
+                    <div class="dropdown_content_more">
+                    <a href="concepts.html">Concepts</a>
+                    <!-- <a href="comics.html">Comics</a> -->
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="artbox">
+            <div class="art" onclick="OnClickArt(0)"><img src="media/art_crops/crop_egg.png"></div>
+            <div class="art" onclick="OnClickArt(1)"><img src="media/art_crops/crop_rooftop.png"></div>
+            <div class="art" onclick="OnClickArt(2)"><img src="media/art_crops/crop_unknown.png"></div>
+            <div class="art" onclick="OnClickArt(3)"><img src="media/art_crops/crop_robin.png"></div>
+            <div class="art" onclick="OnClickArt(4)"><img src="media/art_crops/crop_starspread.png"></div>
+            <div class="art" onclick="OnClickArt(5)"><img src="media/art_crops/crop_skyrocket.png"></div>
+            <div class="art" onclick="OnClickArt(6)"><img src="media/art_crops/crop_ban.png"></div>
+            <div class="art" onclick="OnClickArt(7)"><img src="media/art_crops/crop_cleo.png"></div>
+        </div>
+        <div id="footer">
+            <!-- <a href="" id="social_icon"><img src="media/icons/twitter_logo_small.png"></a>/ -->
+            <a href="https://www.instagram.com/headaacher/" target="_blank" id="social_icon"><img src="media/icons/insta_logo_small.png"></a> | 
+            <a href="https://www.twitch.tv/headaker" target="_blank" id="social_icon"><img src="media/icons/twitch_logo_small.png"></a> | 
+            <a href="https://www.linkedin.com/in/oisin-murphy-98325115b/" target="_blank" id="social_icon"><img src="media/icons/linkedin_logo_small.png"></a> | 
+            <a href="https://www.youtube.com/channel/UCUDMtblCE-_7cwoD596GNOQ" target="_blank" id="social_icon"><img src="media/icons/youtube_logo_small.png"></a>
+            <br>
+            <p>&copy; 2021 Oisin Murphy.</p>
+        </div>
+        <div id="image_preview">
+            <div id="bgfill">
+            <img src="media/icons/x_btn.png" id="exit_btn" alt="exit button" onclick="CloseArt()">
+            <img src="media/icons/r_btn.png" id="next_btn" alt="next image button" onclick="NextArt(currentArt + 1)">
+            <img src="media/icons/l_btn.png" id="prev_btn" alt="previous image button" onclick="NextArt(currentArt - 1)">
+            </div>
+            <div id=image_and_title></div>
+        </div>
     </div>
-    <div>
-        <h1>&nbsp&nbspPersonal links</h1>
-        <p>
-        &nbsp&nbsp<a href="https://www.linkedin.com/in/oisin-murphy-98325115b/" target="_blank">&nbsp-&nbspLinkedIn</a><br/>
-        &nbsp&nbsp<a href="https://github.com/Slamacy?tab=repositories" target="_blank">&nbsp-&nbspGitHub</a><br/>
-        &nbsp&nbsp<a href="https://www.instagram.com/headaacher/" target="_blank">&nbsp-&nbspArt Instagram</a>
-        </p>
-        <p>------------------------------------------------------------------------------</p>
-
-    </div>
-    <div>
-        <h1>&nbsp&nbspERASMUS+ Projects</h1>
-        &nbsp&nbsp<a href="https://youtu.be/ZvjWA6ZMkEE" target="_blank">&nbsp- Lodz of Pain (2018)</a><br/>
-        &nbsp&nbsp<a href="https://docs.google.com/presentation/d/1kGhBuPpdkPxpiZvYjX8NhPervij4hfMRPjtVm1axQWY/edit?usp=sharing" target="_blank">&nbsp- GenderSpective (2018)</a><br/>
-        <p>------------------------------------------------------------------------------</p>
-        <h1>&nbsp&nbspPersonal Projects [More to Add]</h1>
-        &nbsp&nbsp<a href="https://youtu.be/ILAhIj6ZUFQ" target="_blank">&nbsp- Animal Crossing Dialogue (kinda)</a><br/>
-        &nbsp&nbsp<a href="https://drive.google.com/file/d/1ZvZDM7qJ1RPojRVkEp8Lq3KP-9ezLtg5/view?usp=sharing" target="_blank">&nbsp- PaperChase (Game Design Doc)</a><br/>
-        
-    </div>
-    <div>
-        <p>------------------------------------------------------------------------------</p>
-        &nbsp&nbspthis website is currently under construction :> <br/>
-        &nbsp&nbspit's just a <i>superrrr</i> basic one for now <br>
-        <a href="index-new.html">>PREVIEW HERE!<</a>
-        <p>------------------------------------------------------------------------------</p>
-    </div>
-    <div style="float:right; position:absolute; top:50px; left:500px">
-        <img src="index-old-img.png">
-    </div>
-    <!-- <div class="wrapper">
+</body>

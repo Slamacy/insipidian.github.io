@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+#wrapper {
+    margin: 0;
+}
+
 #bgfill {
     background-color: #2b2c5a;
     position: fixed;
@@ -45,84 +49,27 @@ body {
 }
 
 #footer {
-    position: fixed;
-    bottom: 10px;
+    position: relative;
+    clear: both;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 36px;
     width: 100%;
     text-align: center;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 #footer img {
+    position: relative;
+    top: 6px;
     width: 30px;
 }
 
-#model_showcase {
-    width: 100%;
-    height: 550px;
+#footer p {
+    font-size: 16px;
 }
 
-.model {
-    position: relative;
-    width: 1000px;
-    height: 550px;
-    border: 4px solid #60ddad;
-    box-shadow: 0 0 15px #60ddad;
-    left: calc(50% - (1004px / 2));
-}
 
-#model_item_1,
-#game_display_1 {
-    top: 100px;
-}
-
-#model_item_2 {
-    top: 200px;
-}
-
-#model_item_3 {
-    top: 300px;
-}
-
-.sketchfab-embed-wrapper {
-    padding: 30px;
-}
-
-.model_text {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    border: 4px solid #b5e0d0;
-    box-shadow: 0 0 5px #b5e0d0;
-    width: 270px;
-    height: 400px;
-}
-
-.model_text h1 {
-    /* used for 3D Model titles */
-    text-align: center;
-    font-size: 18px;
-}
-
-.model_text h2 {
-    /* used for 3D Model titles */
-    text-align: center;
-    margin-top: 0px;
-    font-size: 14px;
-}
-
-.model_text p {
-    margin-left: 10px;
-}
-
-.model_text img {
-    margin-left: calc(50% - 50px);
-}
-
-#model_decorator {
-    position: absolute;
-    width: 30%;
-    bottom: 0;
-    pointer-events: none;
-}
 
 @keyframes fadein {
     from {
@@ -180,3 +127,7 @@ body {
         opacity: 1;
     }
 }
+
+@import url('../fonts/TitilliumWeb-Regular.ttf');
+
+@import url('../fonts/Raleway-VariableFont_wght.ttf');
