@@ -24,6 +24,14 @@ var environment_imgs = [
     "media/concepts/thinking_city_environment/props.png"
 ];
 
+var gutbuster_imgs = [
+    "media/concepts/gutbuster/broccoliMushroomConcept.png",
+    "media/concepts/gutbuster/tomatoConcept.png",
+    "media/concepts/gutbuster/iceCreamDoughnutConcept.png",
+    "media/concepts/gutbuster/chipsConcept.png",
+    "media/concepts/gutbuster/EnemyDesignsUDP.png"
+];
+
 var currentArt;
 var totalArt;
 var currentImgs;
@@ -46,6 +54,11 @@ function OnClickSection(conceptID) {
             currentImgs = environment_imgs;
             ShowFullSection();
             totalArt = 2;
+            break;
+        case 3:
+            currentImgs = gutbuster_imgs;
+            ShowFullSection();
+            totalArt = 4;
             break;
     }
     
