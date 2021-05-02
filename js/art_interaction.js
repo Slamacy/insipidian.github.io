@@ -1,12 +1,12 @@
 var imageNames = [
+    "untitled [2021]",
     "\"Nega Eggman\" - A gift for Laura [2020]",
+    "\"Northern Lights\" - Album Art Commission for Connected Sounds [2021]",
     "\"Close Friends\" - Album Art Commission for Connected Sounds [2020]",
     "\"Into The Unknown\" - Album Art Commission for Connected Sounds [2020]",
-    "\"The Dark Gods of Chaos\" - Commission [2020]",
     "\"Star Spread\" - Album Art Commission for AdamJLE [2019]",
-    "\"Sky Rocket\" - Album Art Commission for AdamJLE [2019]",
     "\"Sitting on Speaker\" [2019]",
-    "\"Cleo\" - A gift for a friend [2019]",
+    "\"The Dark Gods of Chaos\" - Commission [2020]",
 ];
 var currentArt = 0;
 var totalArt = 7;
