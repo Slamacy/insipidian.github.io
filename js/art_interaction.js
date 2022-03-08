@@ -11,6 +11,11 @@ var imageNames = [
 var currentArt = 0;
 var totalArt = 7;
 
+function UpdateCopyright() {
+    var currYear = new Date().getFullYear();
+    document.getElementById('cpy').innerHTML = "&copy; 2021-" + currYear + " Oisin Murphy.";
+}
+
 function OnClickArt(artID) {
     document.getElementById("image_preview").style.visibility = "visible";
     currentArt = artID;
