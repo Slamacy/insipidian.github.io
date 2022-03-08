@@ -1,12 +1,12 @@
 var imageNames = [
+    "\"Stone Golem\" - Album Art Commission for Connected Sounds [2021/2022]",
+    "\"Splatter Girl\" - My personal take on the out of place shopkeeper from Splatter Master (PS2) [2022]",
     "untitled [2021]",
-    "\"Nega Eggman\" - A gift for Laura [2020]",
     "\"Northern Lights\" - Album Art Commission for Connected Sounds [2021]",
+    "\"Nega Eggman\" - A gift for Laura [2020]",
     "\"Close Friends\" - Album Art Commission for Connected Sounds [2020]",
     "\"Into The Unknown\" - Album Art Commission for Connected Sounds [2020]",
     "\"Star Spread\" - Album Art Commission for AdamJLE [2019]",
-    "\"Sitting on Speaker\" [2019]",
-    "\"The Dark Gods of Chaos\" - Commission [2020]",
 ];
 var currentArt = 0;
 var totalArt = 7;
